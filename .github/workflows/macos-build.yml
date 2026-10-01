@@ -1,0 +1,41 @@
+name: Build macOS app
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Get source code
+        uses: actions/checkout@v6
+
+      - name: Build TTL Fix for macOS
+        run: >
+          xcodebuild
+          -project 'Mac/TTLFix.xcodeproj'
+          -scheme 'TTL Fix'
+          -configuration Release
+          -derivedDataPath build
+          CODE_SIGNING_ALLOWED=NO
+          build
+
+      - name: Create ZIP archive
+        run: >
+          ditto -c -k --sequesterRsrc --keepParent
+          'build/Build/Products/Release/TTL Fix.app'
+          TTL-Fix-macOS.zip
+
+      - name: Upload macOS app
+        uses: actions/upload-artifact@v4
+        with:
+          name: TTL-Fix-macOS
+          path: TTL-Fix-macOS.zip
+          if-no-files-found: error
+          retention-days: 30

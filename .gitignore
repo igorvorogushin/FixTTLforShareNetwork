@@ -1,0 +1,13 @@
+.DS_Store
+DerivedData/
+build/
+dist/
+*.xcuserstate
+xcuserdata/
+*.user
+*.suo
+bin/
+obj/
+.build-release/
+.preview-build/
+Release/

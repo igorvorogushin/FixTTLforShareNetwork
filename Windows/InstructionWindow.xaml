@@ -1,0 +1,67 @@
+<Window x:Class="TTLFixWindows.InstructionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{Binding RouteLabel}" Width="600" Height="500" MinWidth="560" MinHeight="420"
+        WindowStartupLocation="CenterOwner" Background="#F6F7FA">
+  <Window.Resources>
+    <Style x:Key="CloseButton" TargetType="Button">
+      <Setter Property="Width" Value="30"/><Setter Property="Height" Value="30"/>
+      <Setter Property="Background" Value="#F0F2F7"/><Setter Property="Foreground" Value="#636B7A"/>
+      <Setter Property="BorderThickness" Value="0"/><Setter Property="FontSize" Value="18"/>
+      <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button">
+        <Border Background="{TemplateBinding Background}" CornerRadius="15"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border>
+      </ControlTemplate></Setter.Value></Setter>
+    </Style>
+  </Window.Resources>
+
+  <Grid>
+    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+    <Border Grid.Row="0" Background="White" Padding="20">
+      <Grid>
+        <Grid.ColumnDefinitions><ColumnDefinition Width="46"/><ColumnDefinition Width="*"/><ColumnDefinition Width="30"/></Grid.ColumnDefinitions>
+        <Border Width="46" Height="46" Background="#1C457AF5" CornerRadius="12">
+          <TextBlock Text="?" Foreground="#457AF5" FontSize="24" FontWeight="SemiBold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
+        <StackPanel Grid.Column="1" Margin="14,0,14,0" VerticalAlignment="Center">
+          <TextBlock Text="{Binding RouteLabel}" FontSize="22" FontWeight="SemiBold"/>
+          <TextBlock Text="{Binding DiagramIntro}" Foreground="#636B7A" TextWrapping="Wrap" Margin="0,3,0,0"/>
+        </StackPanel>
+        <Button Grid.Column="2" Content="×" Style="{StaticResource CloseButton}" Click="Close_Click" ToolTip="{Binding CloseLabel}"/>
+      </Grid>
+    </Border>
+
+    <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+      <StackPanel Margin="20">
+        <Border Background="#12EB4F4F" CornerRadius="14" Padding="16" Margin="0,0,0,14">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal"><Ellipse Width="10" Height="10" Fill="#EB4F4F" Margin="0,0,10,0" VerticalAlignment="Center"/>
+              <TextBlock Text="{Binding ScenarioOffTitle}" FontSize="16" FontWeight="SemiBold"/></StackPanel>
+            <Grid Margin="0,16,0,14"><Grid.ColumnDefinitions><ColumnDefinition Width="90"/><ColumnDefinition/><ColumnDefinition Width="90"/><ColumnDefinition/><ColumnDefinition Width="90"/></Grid.ColumnDefinitions>
+              <StackPanel><TextBlock Text="▣" FontSize="20" HorizontalAlignment="Center"/><TextBlock Text="{Binding DeviceLabel}" HorizontalAlignment="Center"/><TextBlock Text="TTL 64" FontFamily="Consolas" HorizontalAlignment="Center" Foreground="#636B7A"/></StackPanel>
+              <StackPanel Grid.Column="1" HorizontalAlignment="Center"><TextBlock Text="→" FontSize="20" HorizontalAlignment="Center"/><TextBlock Text="{Binding DecrementLabel}" Foreground="#636B7A" HorizontalAlignment="Center"/></StackPanel>
+              <StackPanel Grid.Column="2"><TextBlock Text="▯" FontSize="20" HorizontalAlignment="Center"/><TextBlock Text="{Binding HotspotLabel}" HorizontalAlignment="Center"/><TextBlock Text="TTL 63" FontFamily="Consolas" HorizontalAlignment="Center" Foreground="#636B7A"/></StackPanel>
+              <TextBlock Grid.Column="3" Text="→" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+              <StackPanel Grid.Column="4"><TextBlock Text="◉" FontSize="20" HorizontalAlignment="Center"/><TextBlock Text="{Binding CarrierLabel}" HorizontalAlignment="Center"/><TextBlock Text="TTL 63" FontFamily="Consolas" HorizontalAlignment="Center" Foreground="#636B7A"/></StackPanel>
+            </Grid>
+            <TextBlock Text="{Binding ScenarioOffText}" Foreground="#636B7A" TextWrapping="Wrap"/>
+          </StackPanel>
+        </Border>
+
+        <Border Background="#1233B363" CornerRadius="14" Padding="16">
+          <StackPanel>
+            <StackPanel Orientation="Horizontal"><Ellipse Width="10" Height="10" Fill="#33B363" Margin="0,0,10,0" VerticalAlignment="Center"/>
+              <TextBlock Text="{Binding ScenarioOnTitle}" FontSize="16" FontWeight="SemiBold"/></StackPanel>
+            <Grid Margin="0,16,0,14"><Grid.ColumnDefinitions><ColumnDefinition Width="90"/><ColumnDefinition/><ColumnDefinition Width="90"/><ColumnDefinition/><ColumnDefinition Width="90"/></Grid.ColumnDefinitions>
+              <StackPanel><TextBlock Text="▣" FontSize="20" HorizontalAlignment="Center"/><TextBlock Text="{Binding DeviceLabel}" HorizontalAlignment="Center"/><TextBlock Text="TTL 65" FontFamily="Consolas" HorizontalAlignment="Center" Foreground="#636B7A"/></StackPanel>
+              <StackPanel Grid.Column="1" HorizontalAlignment="Center"><TextBlock Text="→" FontSize="20" HorizontalAlignment="Center"/><TextBlock Text="{Binding DecrementLabel}" Foreground="#636B7A" HorizontalAlignment="Center"/></StackPanel>
+              <StackPanel Grid.Column="2"><TextBlock Text="▯" FontSize="20" HorizontalAlignment="Center"/><TextBlock Text="{Binding HotspotLabel}" HorizontalAlignment="Center"/><TextBlock Text="TTL 64" FontFamily="Consolas" HorizontalAlignment="Center" Foreground="#636B7A"/></StackPanel>
+              <TextBlock Grid.Column="3" Text="→" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+              <StackPanel Grid.Column="4"><TextBlock Text="◉" FontSize="20" HorizontalAlignment="Center"/><TextBlock Text="{Binding CarrierLabel}" HorizontalAlignment="Center"/><TextBlock Text="TTL 64" FontFamily="Consolas" HorizontalAlignment="Center" Foreground="#636B7A"/></StackPanel>
+            </Grid>
+            <TextBlock Text="{Binding ScenarioOnText}" Foreground="#636B7A" TextWrapping="Wrap"/>
+          </StackPanel>
+        </Border>
+      </StackPanel>
+    </ScrollViewer>
+  </Grid>
+</Window>

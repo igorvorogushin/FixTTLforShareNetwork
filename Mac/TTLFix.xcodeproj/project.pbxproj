@@ -1,0 +1,48 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+		A10000000000000000000001 /* TTLFixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000011 /* TTLFixApp.swift */; };
+		A10000000000000000000002 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000012 /* Info.plist */; };
+		A10000000000000000000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000014 /* Assets.xcassets */; };
+		A10000000000000000000004 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000015 /* Localizable.strings */; };
+		A10000000000000000000005 /* TTLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000018 /* TTLService.swift */; };
+		A10000000000000000000006 /* TTLViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000019 /* TTLViewModel.swift */; };
+		A10000000000000000000007 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000000020 /* L10n.swift */; };
+
+		A10000000000000000000011 /* TTLFixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTLFixApp.swift; sourceTree = "<group>"; };
+		A10000000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000000000000000000013 /* TTL Fix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTL Fix.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000000000016 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A10000000000000000000017 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A10000000000000000000018 /* TTLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTLService.swift; sourceTree = "<group>"; };
+		A10000000000000000000019 /* TTLViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTLViewModel.swift; sourceTree = "<group>"; };
+		A10000000000000000000020 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+
+		A10000000000000000000021 = {isa = PBXGroup; children = (A10000000000000000000022 /* Sources */, A10000000000000000000023 /* Resources */, A10000000000000000000024 /* Products */); sourceTree = "<group>"; };
+		A10000000000000000000022 /* Sources */ = {isa = PBXGroup; children = (A10000000000000000000011 /* TTLFixApp.swift */, A10000000000000000000018 /* TTLService.swift */, A10000000000000000000019 /* TTLViewModel.swift */, A10000000000000000000020 /* L10n.swift */, ); path = Sources; sourceTree = "<group>"; };
+		A10000000000000000000023 /* Resources */ = {isa = PBXGroup; children = (A10000000000000000000012 /* Info.plist */, A10000000000000000000014 /* Assets.xcassets */, A10000000000000000000015 /* Localizable.strings */, ); path = Resources; sourceTree = "<group>"; };
+		A10000000000000000000015 /* Localizable.strings */ = {isa = PBXVariantGroup; children = (A10000000000000000000016 /* en */, A10000000000000000000017 /* ru */, ); name = Localizable.strings; sourceTree = "<group>"; };
+		A10000000000000000000024 /* Products */ = {isa = PBXGroup; children = (A10000000000000000000013 /* TTL Fix.app */, ); name = Products; sourceTree = "<group>"; };
+
+		A10000000000000000000031 /* TTL Fix */ = {isa = PBXNativeTarget; buildConfigurationList = A10000000000000000000041 /* Build configuration list for PBXNativeTarget \"TTL Fix\" */; buildPhases = (A10000000000000000000032 /* Sources */, A10000000000000000000033 /* Frameworks */, A10000000000000000000034 /* Resources */); buildRules = (); dependencies = (); name = "TTL Fix"; productName = "TTL Fix"; productReference = A10000000000000000000013 /* TTL Fix.app */; productType = "com.apple.product-type.application"; };
+		A10000000000000000000032 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001 /* TTLFixApp.swift in Sources */, A10000000000000000000005 /* TTLService.swift in Sources */, A10000000000000000000006 /* TTLViewModel.swift in Sources */, A10000000000000000000007 /* L10n.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		A10000000000000000000033 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		A10000000000000000000034 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000003 /* Assets.xcassets in Resources */, A10000000000000000000004 /* Localizable.strings in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+
+		A10000000000000000000051 /* Project object */ = {isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = { A10000000000000000000031 = { CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = A10000000000000000000042 /* Build configuration list for PBXProject \"TTL Fix\" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ru, ); mainGroup = A10000000000000000000021; productRefGroup = A10000000000000000000024 /* Products */; projectDirPath = ""; projectRoot = ""; targets = (A10000000000000000000031 /* TTL Fix */, ); };
+
+		A10000000000000000000061 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; CODE_SIGN_IDENTITY = "-"; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; }; name = Debug; };
+		A10000000000000000000062 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = YES; CODE_SIGN_IDENTITY = "-"; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; }; name = Release; };
+		A10000000000000000000063 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Resources/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = local.ttlfix.app; PRODUCT_NAME = "TTL Fix"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; }; name = Debug; };
+		A10000000000000000000064 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CODE_SIGN_STYLE = Automatic; COMBINE_HIDPI_IMAGES = YES; CURRENT_PROJECT_VERSION = 1; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Resources/Info.plist; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = local.ttlfix.app; PRODUCT_NAME = "TTL Fix"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; }; name = Release; };
+
+		A10000000000000000000041 /* Build configuration list for PBXNativeTarget \"TTL Fix\" */ = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000063 /* Debug */, A10000000000000000000064 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		A10000000000000000000042 /* Build configuration list for PBXProject \"TTL Fix\" */ = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000061 /* Debug */, A10000000000000000000062 /* Release */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+	};
+	rootObject = A10000000000000000000051 /* Project object */;
+}
