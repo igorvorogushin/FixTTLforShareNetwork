@@ -1,0 +1,50 @@
+/* Палитра — как в Fylivo (светлая и тёмная темы). */
+:root {
+  --color-background: #ffffff;
+  --color-surface: #f5f5f7;
+  --color-surface-strong: #e9edf3;
+  --color-text: #1d1d1f;
+  --color-text-secondary: #6e6e73;
+  --color-accent: #0071e3;
+  --color-accent-hover: #0077ed;
+  --color-selection: rgba(0, 113, 227, 0.10);
+  --color-success: #33b363;
+  --color-danger: #eb4f4f;
+  --color-warning: #f09e29;
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-shadow: rgba(0, 0, 0, 0.12);
+  --color-toolbar: rgba(255, 255, 255, 0.72);
+  --color-input: #ffffff;
+  --color-on-accent: #ffffff;
+  --color-knob: #ffffff;
+  --color-knob-shadow: rgba(0, 0, 0, 0.25);
+  --color-segment-active: #ffffff;
+  --color-segment-shadow: rgba(0, 0, 0, 0.12);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #13161b;
+    --color-surface: #1d2026;
+    --color-surface-strong: #24262e;
+    --color-text: #f0f2fa;
+    --color-text-secondary: #a3abba;
+    --color-accent: #6394ff;
+    --color-accent-hover: #7aa8ff;
+    --color-selection: rgba(99, 148, 255, 0.18);
+    --color-success: #4dc775;
+    --color-danger: #ff6363;
+    --color-warning: #ffb03d;
+    --color-border: rgba(255, 255, 255, 0.12);
+    --color-shadow: rgba(0, 0, 0, 0.4);
+    --color-toolbar: rgba(19, 22, 27, 0.72);
+    --color-input: #181b21;
+    --color-on-accent: #ffffff;
+    --color-knob: #ffffff;
+    --color-knob-shadow: rgba(0, 0, 0, 0.4);
+    --color-segment-active: #3a3d46;
+    --color-segment-shadow: rgba(0, 0, 0, 0.3);
+    color-scheme: dark;
+  }
+}
