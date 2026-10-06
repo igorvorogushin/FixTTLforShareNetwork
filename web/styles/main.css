@@ -9,6 +9,11 @@ h1, h2, p { margin-top: 0; }
 .brand { align-items: baseline; color: var(--color-text); display: flex; font-size: 17px; gap: 5px; letter-spacing: -0.01em; text-decoration: none; }
 .brand-mark { color: var(--color-accent); font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, sans-serif; font-size: 19px; font-weight: 700; letter-spacing: -0.02em; }
 .brand-rest { color: var(--color-text-secondary); font-weight: 400; }
+.header-actions { align-items: center; display: flex; gap: 8px; }
+.segmented { background: var(--color-surface-strong); border-radius: 8px; display: inline-flex; gap: 2px; padding: 2px; }
+.segmented button { background: transparent; border: 0; border-radius: 6px; color: var(--color-text-secondary); cursor: pointer; font: inherit; font-size: 12px; font-weight: 600; letter-spacing: .02em; padding: 4px 9px; transition: background .15s ease, color .15s ease; }
+.segmented button:hover { color: var(--color-text); }
+.segmented button[aria-pressed="true"] { background: var(--color-segment-active); box-shadow: 0 1px 2px var(--color-segment-shadow); color: var(--color-text); }
 
 /* ─── Кнопки ────────────────────────────────────────────────────────── */
 .button { align-items: center; border: 0; border-radius: 980px; cursor: pointer; display: inline-flex; font-size: 15px; font-weight: 500; gap: 8px; justify-content: center; padding: 10px 20px; text-decoration: none; transition: background .2s ease, transform .2s ease; white-space: nowrap; }
