@@ -31,7 +31,9 @@ h1, h2, p { margin-top: 0; }
 .hero h1 { font-size: clamp(36px, 6vw, 56px); letter-spacing: -0.045em; line-height: 1.05; margin-bottom: 14px; }
 .hero-copy { color: var(--color-text-secondary); font-size: clamp(18px, 2.6vw, 22px); letter-spacing: -0.02em; line-height: 1.3; margin: 0 auto; max-width: 560px; text-wrap: balance; }
 
-.downloads { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 40px; }
+.downloads { align-items: flex-start; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-bottom: 40px; }
+.download { display: flex; flex-direction: column; gap: 8px; }
+.downloads-note { color: var(--color-text-secondary); font-size: 13px; text-align: center; }
 
 .screenshot { margin: 0 0 40px; }
 .screenshot img { border-radius: 18px; display: block; height: auto; width: 100%; }
@@ -46,7 +48,7 @@ h1, h2, p { margin-top: 0; }
 @media (max-width: 700px) {
   .site-header-inner, .app, .site-footer { padding-left: 16px; padding-right: 16px; }
   .hero { padding: 44px 0 24px; }
-  .downloads { flex-direction: column; }
+  .downloads { align-items: stretch; flex-direction: column; }
   .card { padding: 18px 16px 20px; }
   .screenshot img { border-radius: 12px; }
 }
